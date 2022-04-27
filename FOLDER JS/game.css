@@ -7,17 +7,25 @@
     padding : 0;
 }
 
+body {
+    background-color: burlywood;
+}
+
 #start-button {
-    background-color: lightblue;
+    background-color: lightseagreen;
     border-radius: 20%;
     padding: 20px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    color: black;
+    font-family:fantasy;
+    border:solid black 5px; 
+    border-style:double;
 }
 
 #start-button:hover {
-    background-color: lightgreen;
-    color: black ;
+    background-color: brown;
+    color: white ;
+    border:solid black 5px; 
+    border-style:double;
 }
 
 .game {
@@ -29,7 +37,10 @@
 } 
 
 #canvas{
-    border: solid 4px black
+    border-radius: 1%;
+    border: solid black 10px;
+    border-style:double;
+    border-spacing: 5px;
 }
 
 #game-board{
@@ -41,4 +52,16 @@
     display : flex ;
     justify-content: center;
     margin-top: 10px ; 
+}
+
+h6 {
+    position: absolute ;
+    bottom : 520px; 
+    left : 70px; 
+    font-size: 14px;
+    font-family: fantasy;
+    border: 1px solid black ; 
+    border-style:dotted;
+    padding: 16px ;
+    
 }

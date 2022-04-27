@@ -8,21 +8,16 @@ class Player {
         this.width = 50
         this.height = 48
         this.x = 0
-        this.y = 470
+        this.y = 370
         this.frames = null ; 
     }
 
-    init(){
-        this.x = 0
-        this.y = 470
-    }
-
-    move(frameNumber){
+     move(frameNumber){
 
     }
 
     animate(frames){
-        this.sprite = Math.floor((frames / 10) % this.spriteCount)
+        this.sprite = Math.floor((frames / 60) % this.spriteCount)
         console.log(this.sprite)
 
     }

@@ -1,5 +1,5 @@
 class Sounds {
-    main = new Audio ("../SOUNDS/main.mp3");
+    main = new Audio ("../SOUNDS/run.mp3");
 
     play(sounds) {
         this[sounds].play();
