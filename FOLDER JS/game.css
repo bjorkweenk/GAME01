@@ -1,0 +1,44 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0 ; 
+    padding : 0;
+}
+
+#start-button {
+    background-color: lightblue;
+    border-radius: 20%;
+    padding: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+#start-button:hover {
+    background-color: lightgreen;
+    color: black ;
+}
+
+.game {
+
+    margin-top: 20px;
+    margin-bottom: 30px ;
+    display: flex;
+    justify-content: center;
+} 
+
+#canvas{
+    border: solid 4px black
+}
+
+#game-board{
+    display: flex;
+    justify-content: center;
+}
+
+.sounds {
+    display : flex ;
+    justify-content: center;
+    margin-top: 10px ; 
+}
