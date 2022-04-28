@@ -4,7 +4,7 @@ const game = new Game();
 window.onload = () => game.init();
 
 
-const startButton = document.getElementById('start-button');
+/*const startButton = document.getElementById('start-button');
 
 startButton.addEventListener(
     'click', () => {
@@ -12,4 +12,4 @@ startButton.addEventListener(
         startButton.blur()
         game.start();
     }
-);
+);*/

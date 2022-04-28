@@ -8,24 +8,8 @@
 }
 
 body {
-    background-color: burlywood;
-}
-
-#start-button {
-    background-color: lightseagreen;
-    border-radius: 20%;
-    padding: 20px;
-    color: black;
-    font-family:fantasy;
-    border:solid black 5px; 
-    border-style:double;
-}
-
-#start-button:hover {
-    background-color: brown;
-    color: white ;
-    border:solid black 5px; 
-    border-style:double;
+ 
+    background-image: url(https://images.unsplash.com/photo-1633218388467-539651dcf81f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
 }
 
 .game {
@@ -37,21 +21,36 @@ body {
 } 
 
 #canvas{
-    border-radius: 1%;
-    border: solid black 10px;
-    border-style:double;
-    border-spacing: 5px;
+    border-radius: 10%;
+    border: 30px solid rgb(229, 24, 191) ;
+    margin-bottom: 100px;
+   
+    
+
 }
 
 #game-board{
     display: flex;
     justify-content: center;
+    margin-top: 200px;
+    
 }
 
-.sounds {
-    display : flex ;
+#game-start{
+    display: flex;
     justify-content: center;
-    margin-top: 10px ; 
+   margin:auto;
+   margin-top : 10px;
+   padding : 10px;
+   border-radius: 20%;
 }
 
+#restart{
+    display: flex;
+    justify-content: center;
+   margin:auto;
+   margin-top : 10px;
+   padding : 10px;
+   border-radius: 20%;
+}
 

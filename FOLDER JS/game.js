@@ -1,14 +1,16 @@
 class Game {
-  screen = 1; // 0= splash start, 1 = game, 2 = gamover
+  screen = 0; // 0= splash start, 1 = game, 2 = gamover
   points = 0;
   ctx = null;
   frameId = null;
   background = null;
   sounds = new Sounds();
+  score = 0;
   player = null;
   obstacles = [];
   juices = [];
   gameOverBool = false;
+
 
   init() {
     if(this.frames) window.cancelAnimationFrame(this.frames);
@@ -34,8 +36,40 @@ class Game {
         this.reset();
         this.frameId = window.requestAnimationFrame(this.play.bind(this));
         break;
+        case 2:
+          console.log("screen 2")
+          this.displayGameOver();
+          break;
+          default:
+            console.log("we good?")
     }
   }
+
+displaySplashStart(){
+    const startButton = document.createElement("button");
+    startButton.id = "game-start";
+    startButton.textContent = "Start Game";
+    startButton.onclick = () => {
+      this.screen = 1;
+      this.start();
+      startButton.remove();
+    };
+    document.body.appendChild(startButton);
+  }
+
+  displayGameOver(){
+    const startButton = document.createElement("button");
+    startButton.id = "restart";
+    startButton.textContent = "RESTART";
+    startButton.onclick = () => {
+      this.screen = 1;
+      this.start();
+      
+    };
+    document.body.appendChild(startButton);
+  }
+
+
 
   setCanvasToFullScreen() {
     this.ctx.canvas.height = 500;
@@ -99,6 +133,7 @@ class Game {
 
   gameOver(){
     cancelAnimationFrame(this.frameId);
+    this.screen = 2; 
     this.frameId = null;
     this.ctx.save();
     this.ctx.fillStyle = "rgba(69,0,154,0.7)";
@@ -112,6 +147,7 @@ class Game {
         this.ctx.canvas.height/2
     );
     this.ctx.restore();
+    this.sounds.play("gameOver")
 }
 
   reset() {
@@ -128,9 +164,6 @@ class Game {
     this.obstacles.forEach((obstacle) => obstacle.move(this.frameId));
     this.juices.forEach((juice)=> juice.move(this.frameId));
     this.checkCollisions();
-  
- 
-
     // ------  Drawing everything ---------
     this.ctx.clearRect(0,0,1900, 1900)
     this.background.draw(this.frameId);

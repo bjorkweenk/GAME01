@@ -41,7 +41,7 @@ class Player {
 
 
     animate(frames) {
-        this.sprite = Math.floor((frames / 20) % this.spriteCount)
+        this.sprite = Math.floor((frames / 15) % this.spriteCount)
     }
 
     draw(frames) {

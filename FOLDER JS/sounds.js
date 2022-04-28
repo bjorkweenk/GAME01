@@ -9,6 +9,8 @@ class Sounds {
     pause(sounds){
         this[sounds].pause();
     }
+
+    gameOver = new Audio ("../SOUNDS/gameover.wav")
 }
 
 console.log("SOUND ROCKING")
