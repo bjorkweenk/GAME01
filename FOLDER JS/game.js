@@ -174,3 +174,6 @@ displaySplashStart(){
     if(this.gameOverBool) this.gameOver();
   }
 }
+
+setTimeout(fade_out, 5000);
+
