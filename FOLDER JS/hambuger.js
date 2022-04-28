@@ -2,12 +2,12 @@ class Obstacle {
     constructor(ctx, x0, y0, img) {
       this.ctx = ctx;
       this.img = img;
-      this.speedX = -0;
+      this.speedX = -2;
       this.speedY = 0;
-      this.width = 100;
-      this.height = 100;
-      this.x = x0 - this.width - 20;
-      this.y = y0 - this.height - 20;
+      this.width = 90;
+      this.height = 80;
+      this.x = 570;
+      this.y = 395;
       this.img = new Image();
       this.img.src="../IMAGES/hamburger.png";
     }

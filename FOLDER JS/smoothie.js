@@ -2,11 +2,11 @@ class Juice {
     constructor(ctx, x0, y0, img) {
       this.ctx = ctx;
       this.img = img;
-      this.speedX = -0;
+      this.speedX = -1;
       this.speedY = 0;
-      this.width = 80;
-      this.height = 80;
-      this.x = 400;
+      this.width = 70;
+      this.height = 70;
+      this.x = 600;
       this.y = 200; 
       this.img = new Image();
       this.img.src="../IMAGES/app.png";

@@ -54,14 +54,4 @@ body {
     margin-top: 10px ; 
 }
 
-h6 {
-    position: absolute ;
-    bottom : 520px; 
-    left : 70px; 
-    font-size: 14px;
-    font-family: fantasy;
-    border: 1px solid black ; 
-    border-style:dotted;
-    padding: 16px ;
-    
-}
+
