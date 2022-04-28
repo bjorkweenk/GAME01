@@ -13,4 +13,4 @@ class Sounds {
     gameOver = new Audio ("../SOUNDS/gameover.wav")
 }
 
-console.log("SOUND ROCKING")
+console.log("SOUND")
