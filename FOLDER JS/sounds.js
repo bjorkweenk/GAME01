@@ -11,6 +11,5 @@ class Sounds {
     }
 
     gameOver = new Audio ("../SOUNDS/gameover.wav")
+    bite = new Audio("../SOUNDS/mainbite.mp3")
 }
-
-console.log("SOUND")
