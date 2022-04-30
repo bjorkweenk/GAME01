@@ -2,7 +2,7 @@ class Juice {
     constructor(ctx, x0, y0, img) {
       this.ctx = ctx;
       this.img = img;
-      this.speedX = -1;
+      this.speedX = -4;
       this.speedY = 0;
       this.width = 70;
       this.height = 70;

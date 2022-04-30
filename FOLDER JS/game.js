@@ -89,7 +89,7 @@ displaySplashStart(){
   }
   
   generateObstacle() {
-    if (this.frameId > 800) {
+    if (this.frameId > 170) {
       if (this.frameId % 500 === 0) {
         this.obstacles.push(
           new Obstacle(this.ctx, this.ctx.canvas.width, this.ctx.canvas.height)
