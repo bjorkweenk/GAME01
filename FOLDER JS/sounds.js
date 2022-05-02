@@ -1,5 +1,5 @@
 class Sounds {
-    main = new Audio ("../SOUNDS/run.mp3");
+    main = new Audio ("/SOUNDS/run.mp3");
 
     play(sounds) {
         this[sounds].play();
@@ -10,6 +10,6 @@ class Sounds {
         this[sounds].pause();
     }
 
-    gameOver = new Audio ("../SOUNDS/gameover.wav")
-    bite = new Audio("../SOUNDS/mainbite.mp3")
+    gameOver = new Audio ("/SOUNDS/gameover.wav")
+    bite = new Audio("/SOUNDS/mainbite.mp3")
 }

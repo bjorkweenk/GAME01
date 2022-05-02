@@ -2,7 +2,7 @@ class Player {
     constructor(ctx) {
         this.ctx = ctx
         this.img = new Image()
-        this.img.src = "../IMAGES/girl.png"
+        this.img.src = "/IMAGES/girl.png"
         this.spriteCount = 4
         this.sprite = 0
         this.width = 50

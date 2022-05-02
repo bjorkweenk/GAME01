@@ -9,7 +9,7 @@ class Obstacle {
       this.x = 570;
       this.y = 395;
       this.img = new Image();
-      this.img.src="../IMAGES/hamburger.png";
+      this.img.src="/IMAGES/hamburger.png";
     }
   
     move(frameId) {
