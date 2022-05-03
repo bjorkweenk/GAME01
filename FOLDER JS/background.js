@@ -7,7 +7,7 @@ class Background {
         this.height = 1590;
         this.width = 2278;
         this.img = new Image(this.ctx.canvas.width, this.ctx.canvas.height);
-        this.img.src = "../IMAGES/tent.png"
+        this.img.src = "IMAGES/tent.png"
     }
 
     move(frameId) {

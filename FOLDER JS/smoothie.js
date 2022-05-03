@@ -9,7 +9,7 @@ class Juice {
       this.x = 600;
       this.y = 200; 
       this.img = new Image();
-      this.img.src="/IMAGES/app.png";
+      this.img.src="IMAGES/app.png";
     }
   
     move(frameId) {
